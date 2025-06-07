@@ -11,8 +11,10 @@
     private: false
   tasks:
   - name: print the greeting
-    vars:
-      GREETING: "Hello from task"
+    # vars:
+    #   GREETING: "Hello from task"
     ansible.builtin.debug:
       msg: "{{ GREETING }}"
 
+#It will be always command line argument take the 1st preference
+#2nd will take task as preference
