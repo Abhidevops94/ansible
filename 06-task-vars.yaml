@@ -1,13 +1,13 @@
 - name: task level variables
   hosts: local
   connection: local
-  vars:
-    COURSE: DevOps with AWS
+  vars: #This is global access
+    COURSE: DevOps with AWS 
     DURATION: 10HRS
     TRAINER: ABHI
   tasks:
   - name: print course details
-    vars:
+    vars: #This is local access
       COURSE: Ansible
     ansible.builtin.debug:
     #Vars reference should be surronded by ""
