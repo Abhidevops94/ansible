@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: print names
-    ansible.builtin.debian:
+    ansible.builtin.debug:
       msg: "Hello, {{ item }}" #item is reserverd keyword
     loop:
     - suresh
