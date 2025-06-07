@@ -1,7 +1,7 @@
 - name: hello world
   hosts: local
-  connectiom: local #no need to give username and password
+  connection: local #no need to give username and password
   tasks:
-  -name: print hello world
-  ansinble.builtin.debug:
-    msg: "Hello world"
+  - name: print hello world
+    ansinble.builtin.debug:
+      msg: "Hello world"
