@@ -5,10 +5,10 @@
     GREETING: "Hello from play"
   # vars_files:
   # - course.yaml
-  vars_prompt:
-  - name: GREETING
-    prompt: please enter greeting
-    private: false
+  # vars_prompt:
+  # - name: GREETING
+  #   prompt: please enter greeting
+  #   private: false
   tasks:
   - name: print the greeting
     # vars:
@@ -19,3 +19,4 @@
 #It will be always command line argument take the 1st preference
 #2nd will take task as preference
 #3rd will be file
+#4th will be prompt
