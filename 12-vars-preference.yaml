@@ -3,8 +3,8 @@
   connection: local
   vars:
     GREETING: "Hello from play"
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   vars_prompt:
   - name: GREETING
     prompt: please enter greeting
@@ -18,3 +18,4 @@
 
 #It will be always command line argument take the 1st preference
 #2nd will take task as preference
+#3rd will be file
