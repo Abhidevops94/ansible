@@ -1,0 +1,19 @@
+- name: task level variables
+  hosts: local
+  connection: local
+  vars:
+    COURSE: DevOps with AWS
+    DURATION: 10HRS
+    TRAINER: ABHI
+  tasks:
+  - name: print course details
+    vars:
+      COURSE: Ansible
+    ansible.builtin.debug:
+    #Vars reference should be surronded by ""
+      msg: "Hello {{ COURSE }} , Course Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+
+  - name: print course details again
+    ansible.builtin.debug:
+    #Vars reference should be surronded by ""
+      msg: "Hello {{ COURSE }} , Course Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
